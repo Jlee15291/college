@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Link to your css file -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- The title is what displays in the browser tab. Should be the title of your page. -->
+    <title></title>
+  </head>
+
+  <body>
+
+    <!-- You can have more than one container. The .container div will bring your code in from the edges of the browser. If you want a solid color div, use a <section></section> tag and put the .container div inside the section tag. Apply your background color or image to the section tag. -->
+    
+
+
+
+    <header>
+    <nav class="site-nav">
+    <div class="container">
+    <ul class="main-nav">
+        <a href="file:///Users/jamal.lee/Desktop/jamal's%20web%20design%20project/index.html" target="Career"><li>Career</li></a>
+        <a href="file:///Users/jamal.lee/Desktop/jamal's%20web%20design%20project/piano.html" target="Piano"><li>Piano</li></a>
+      </ul>
+    </div>
+    </nav>
+    </header>
+      
+      <!-- Row with 1 Centered 50% Column -->
+      <div class="row">
+        <div class="col-12 col-sm-6 offset-sm-3">
+          <h1 class="text-center"></h1>
+        </div>
+      </div>
+
+      <!-- Row with Two Equal Size Columns -->
+      <div class="row">
+        <div class="col-12 col-sm-6"></div>
+        <div class="col-12 col-sm-6"></div>
+      </div>
+
+      <!-- Row with 2/3 1/3 Columns-->
+      <div class="row">
+        <div class="col-12 col-sm-9"></div>
+        <div class="col-12 col-sm-3"></div>
+      </div>
+
+      <!-- Row with 75% / 25% Columns -->
+      <div class="row">
+        <div class="col-12 col-sm-8"></div>
+        <div class="col-12 col-sm-4"></div>
+      </div>
+
+      <!-- Row with Three Equal Size Columns -->
+      <div class="row">
+        <div class="col-12 col-sm-4"></div>
+        <div class="col-12 col-sm-4">
+          
+        </div>
+        <div class="col-12 col-sm-4"></div>
+      </div>
+
+      <!-- Row with Three 25% 50% 25% Columns -->
+      <div class="row">
+        <div class="col-12 col-sm-3"></div>
+        <div class="col-12 col-sm-6">
+          <ul id="slides">
+      <li class="slide showing"><img src="img/pp.jpg">
+      <p>If my career doesn't go well and I don't enjoy the community of that department, I will go into the piano/music community. My father used to play the piano and my uncle plays the piano on my mother's side. So I think I get my piano skills from my father, but in my opinion I'm not that great and I need to do a lot of practice and learn more. However I believe that I have potenial in playing this and I hope I can become a pianoist if I can.</p>
+    </li>
+      <li class="slide"><img src="img/Bee.jpg">
+       <p>Beethoven was a German composer and pianist. The first song I played on the piano that was maded by Beethoven is called, "Moonlight." I don't know why I chose this song, but for some reason it spoke to me when I pulled the piano in the basement. And I realize that it was apart of my childhood. And so I started to listen to some of his music and some jazz.
+      </p>
+      </li>
+      <li class="slide"><img src="img/moz.jpg"></li>
+      <li class="slide"><img src="img/ob.jpg">
+      <p>I haven't decided who will I go to if I do figure piano is my best bet. Sadly, I don't have a mentor to help me learn or teach me the basics of piano.  But, I believe that I will know in the future when the time is right. So, I hope it works out and I enjoy doing it with a clear mind.
+      </p></li>
+      <li class="slide"><img src="img/pia.jpg">
+      <p>Like I said before, don't have a teacher, but wish they have piano lesson in the school, then again teaching piano is a one on one type of class you have to teach. And its can be and will be diffcult to try to a teach piano with having so many people in the classroom. And you as a teacher have to go to each student one at time trying to show them and help do a miner and a major scale. Long story short, its going to take to time to do this, but I will be ready to be commited to the practice and the lessons.
+      </p></li>
+    </ul>
+        </div>
+        <div class="col-12 col-sm-3"></div>
+      </div>
+
+      <!-- Row with Four Equal Size Columns -->
+      <div class="row">
+        <div class="col-12 col-sm-3"></div>
+        <div class="col-12 col-sm-3"></div>
+        <div class="col-12 col-sm-3"></div>
+        <div class="col-12 col-sm-3"></div>
+      </div>
+    
+<script>
+ var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,4000);
+
+function nextSlide(){
+  slides[currentSlide].className = 'slide';
+  currentSlide = (currentSlide+1)%slides.length;
+  slides[currentSlide].className = 'slide showing';
+}
+</script>
+
+    </div> <!-- Close the Container -->
+
+    <!-- Bootstrap Javascript - Don't Delete -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
